@@ -1,0 +1,201 @@
+{
+    "rules": [
+        {
+            "id": 1,
+            "ip": "127.0.0.1",
+            "port": null,
+            "protocol": "ANY",
+            "action": "ALLOW",
+            "priority": 1,
+            "description": "Allow localhost traffic",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 16,
+            "ip": "10.0.0.1",
+            "port": 80,
+            "protocol": "TCP",
+            "action": "ALLOW",
+            "priority": 5,
+            "description": "Allow HTTP traffic for testing",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2025-10-04T19:35:34.196313"
+        },
+        {
+            "id": 2,
+            "ip": "192.168.0.0/16",
+            "port": null,
+            "protocol": "ANY",
+            "action": "ALLOW",
+            "priority": 10,
+            "description": "Allow private network 192.168.x.x",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 3,
+            "ip": "10.0.0.0/8",
+            "port": null,
+            "protocol": "ANY",
+            "action": "ALLOW",
+            "priority": 10,
+            "description": "Allow private network 10.x.x.x",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 4,
+            "ip": "172.16.0.0/12",
+            "port": null,
+            "protocol": "ANY",
+            "action": "ALLOW",
+            "priority": 10,
+            "description": "Allow private network 172.16-31.x.x",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 5,
+            "ip": "8.8.8.8",
+            "port": 53,
+            "protocol": "UDP",
+            "action": "ALLOW",
+            "priority": 20,
+            "description": "Allow Google DNS",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 6,
+            "ip": "1.1.1.1",
+            "port": 53,
+            "protocol": "UDP",
+            "action": "ALLOW",
+            "priority": 20,
+            "description": "Allow Cloudflare DNS",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 7,
+            "ip": null,
+            "port": 80,
+            "protocol": "TCP",
+            "action": "ALLOW",
+            "priority": 30,
+            "description": "Allow HTTP traffic",
+            "country": null,
+            "rate_limit": 100,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 8,
+            "ip": null,
+            "port": 443,
+            "protocol": "TCP",
+            "action": "ALLOW",
+            "priority": 30,
+            "description": "Allow HTTPS traffic",
+            "country": null,
+            "rate_limit": 100,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 13,
+            "ip": "10.0.0.1",
+            "port": 22,
+            "protocol": "TCP",
+            "action": "BLOCK",
+            "priority": 50,
+            "description": "Interactive block: 10.0.0.1",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2025-09-15T15:10:31.976453"
+        },
+        {
+            "id": 14,
+            "ip": "8.8.8.8",
+            "port": 53,
+            "protocol": "UDP",
+            "action": "ALLOW",
+            "priority": 50,
+            "description": "Interactive allow: 8.8.8.8",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2025-10-04T19:31:07.352481"
+        },
+        {
+            "id": 15,
+            "ip": "10.0.0.1",
+            "port": 22,
+            "protocol": "TCP",
+            "action": "BLOCK",
+            "priority": 50,
+            "description": "Interactive block: 10.0.0.1",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2025-10-04T19:31:28.663478"
+        },
+        {
+            "id": 9,
+            "ip": null,
+            "port": 22,
+            "protocol": "TCP",
+            "action": "BLOCK",
+            "priority": 80,
+            "description": "Block SSH from external networks",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 10,
+            "ip": null,
+            "port": 23,
+            "protocol": "TCP",
+            "action": "BLOCK",
+            "priority": 80,
+            "description": "Block Telnet (insecure)",
+            "country": null,
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 11,
+            "ip": null,
+            "port": null,
+            "protocol": "ANY",
+            "action": "BLOCK",
+            "priority": 90,
+            "description": "Block traffic from high-risk countries",
+            "country": "CN",
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        },
+        {
+            "id": 12,
+            "ip": null,
+            "port": null,
+            "protocol": "ANY",
+            "action": "BLOCK",
+            "priority": 90,
+            "description": "Block traffic from sanctioned countries",
+            "country": "KP",
+            "rate_limit": null,
+            "created_at": "2024-01-01T00:00:00"
+        }
+    ],
+    "metadata": {
+        "version": "2.0",
+        "created": "2025-10-04T19:35:34.196411",
+        "total_rules": 16
+    }
+}

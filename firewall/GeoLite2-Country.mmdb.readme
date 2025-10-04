@@ -1,0 +1,17 @@
+
+GeoLite2 Country Database Setup
+==============================
+
+To enable country-based filtering in FireGuardCLI:
+
+1. Create a free MaxMind account at:
+   https://dev.maxmind.com/geoip/geolite2-free-geolocation-data
+
+2. Download GeoLite2-Country database
+
+3. Place the GeoLite2-Country.mmdb file in this directory
+
+4. Restart FireGuardCLI
+
+Without this database, country-based rules will be ignored.
+All other functionality will work normally.

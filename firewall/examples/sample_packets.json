@@ -1,0 +1,26 @@
+[
+  {
+    "ip": "192.168.1.100",
+    "port": 80,
+    "protocol": "TCP",
+    "size": 1024
+  },
+  {
+    "ip": "8.8.8.8",
+    "port": 53,
+    "protocol": "UDP",
+    "size": 64
+  },
+  {
+    "ip": "10.0.0.1",
+    "port": 22,
+    "protocol": "TCP",
+    "size": 128
+  },
+  {
+    "ip": "1.1.1.1",
+    "port": 443,
+    "protocol": "TCP",
+    "size": 1200
+  }
+]
